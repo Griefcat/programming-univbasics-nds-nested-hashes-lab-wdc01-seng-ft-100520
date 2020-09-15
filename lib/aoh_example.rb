@@ -20,8 +20,10 @@ end
 def literal_aoh
 film_fest = [
   {:name=> "Don Gately", :occupation=> "Live-in Staff"},
-  {:name=>"Orson Welles", :favorite_movie=>"Citizen Kane"},
-  {:name=>"Andrej Tarkovsky", :favorite_movie=>"Solaris"}
+{ :name=>  "Joelle van Dyne", :occupation=>"Radio Personality" },
+  { :name=>  "Pat Monteseian", :occupation=> "Staff" },
+  { :name=>  "Kate Gompert", :occupation=> "None" },
+  
 ]
 end
 

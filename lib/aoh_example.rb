@@ -1,9 +1,9 @@
 # Examples inspired by David Foster Wallace's # (2/21/1962 to 9/12/2008) _Infinite Jest_
-DON_G = { name:  "Don Gately", occupation: "Live-in Staff" }
-JOELLE_VD = { name:  "Joelle van Dyne", occupation: "Radio Personality" }
-PAT_M =  { name:  "Pat Monteseian", occupation: "Staff" }
-KATE_G = { name:  "Kate Gompert", occupation: "None" }
-BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
+DON_G = { :name=>  "Don Gately", :occupation=> "Live-in Staff" }
+JOELLE_VD = { :name=>  "Joelle van Dyne", :occupation=>"Radio Personality" }
+PAT_M =  { :name=>  "Pat Monteseian", :occupation=> "Staff" }
+KATE_G = { :name=>  "Kate Gompert", :occupation=> "None" }
+BRUCE_G = { :name=>  "Bruce Green", :occupation=> "Fan of Mildred" }
 
 def assembled_aoh
   
@@ -18,8 +18,11 @@ def assembled_aoh
 end
 
 def literal_aoh
-  # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
+film_fest = [
+  {:name=> "Don Gately", :occupation=> "Live-in Staff"},
+  {:name=>"Orson Welles", :favorite_movie=>"Citizen Kane"},
+  {:name=>"Andrej Tarkovsky", :favorite_movie=>"Solaris"}
+]
 end
 
 def aoh_lookup(aoh, row, key)
